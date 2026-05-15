@@ -495,15 +495,15 @@ mark{background:rgba(212,160,23,.28);border-radius:2px;padding:0 1px;}
     </div>
     <div class="proj-section-lbl" style="margin-top:4px;">Proiecte salvate</div>
     <div class="proj-list" id="projList"></div>
-    <div class="proj-section-lbl" style="margin-top:4px;">Export / Import JSON</div>
+    <div class="proj-section-lbl" style="margin-top:4px;">Export / Import PROIECT</div>
     <div class="proj-export-row">
       <button class="proj-exp-btn" onclick="exportProjJSON()">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Exporta JSON
+        Exporta PROIECT
       </button>
       <button class="proj-exp-btn" onclick="document.getElementById('fi-json').click()">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17,8 12,3 7,8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-        Importa JSON
+        Importa PROIECT
       </button>
     </div>
   </div>
@@ -1549,7 +1549,7 @@ function exportProjJSON(){
   var blob=new Blob([JSON.stringify({version:1,name:name,exportedAt:Date.now(),state:state},null,2)],{type:'application/json'});
   var a=document.createElement('a'); a.href=URL.createObjectURL(blob);
   a.download=name.replace(/\s+/g,'_')+'_'+new Date().toISOString().split('T')[0]+'.json';
-  a.click(); URL.revokeObjectURL(a.href); toast('✓ Proiect exportat ca JSON');
+  a.click(); URL.revokeObjectURL(a.href); toast('✓ Proiect exportat');
 }
 function importProjJSON(inp){
   var f=inp.files[0]; if(!f) return;
