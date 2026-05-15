@@ -354,142 +354,61 @@ mark{background:rgba(212,160,23,.28);border-radius:2px;padding:0 1px;}
   /* Drawer qty buttons bigger */
   .qb{width:26px;height:26px;font-size:15px;}
   .qi{width:52px;font-size:12px;}
-
-  /* Projects button mobile */
-  .btn-proj .btn-proj-text{display:none;}
-  .btn-proj{padding:7px 10px;}
 }
 
 /* ── PROJECT MANAGER ── */
 .btn-proj{
-  position:relative;
-  padding:7px 14px;border-radius:var(--r);
+  position:relative;padding:7px 14px;border-radius:var(--r);
   background:rgba(217,186,181,.15);color:#F2E8E7;
   font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;
-  font-size:12px;font-weight:500;
-  border:1px solid rgba(217,186,181,.35);
-  cursor:pointer;transition:.15s;
-  display:inline-flex;align-items:center;gap:6px;
+  font-size:12px;font-weight:500;border:1px solid rgba(217,186,181,.35);
+  cursor:pointer;transition:.15s;display:inline-flex;align-items:center;gap:6px;
 }
 .btn-proj:hover{background:rgba(217,186,181,.28);border-color:rgba(217,186,181,.6);}
-
-.proj-autosave-dot{
-  width:6px;height:6px;border-radius:50%;
-  background:#D4A017;display:none;flex-shrink:0;
-}
+.proj-autosave-dot{width:6px;height:6px;border-radius:50%;background:#D4A017;display:none;flex-shrink:0;}
 .btn-proj.dirty .proj-autosave-dot{display:inline-block;}
-
-/* Dropdown panel */
-.proj-dropdown{
-  position:fixed;
-  background:#fff;border-radius:var(--r2);
-  box-shadow:0 8px 32px rgba(0,0,0,.22);
-  border:1px solid var(--line);
-  width:320px;z-index:2000;
-  display:none;flex-direction:column;overflow:hidden;
-}
+.proj-dropdown{position:fixed;background:#fff;border-radius:var(--r2);box-shadow:0 8px 32px rgba(0,0,0,.22);border:1px solid var(--line);width:320px;z-index:2000;display:none;flex-direction:column;overflow:hidden;}
 .proj-dropdown.open{display:flex;}
-
-.proj-dd-head{
-  background:#1E535C;padding:12px 14px;
-  display:flex;align-items:center;gap:8px;flex-shrink:0;
-}
+.proj-dd-head{background:#1E535C;padding:12px 14px;display:flex;align-items:center;gap:8px;flex-shrink:0;}
 .proj-dd-title{font-size:12px;font-weight:600;color:#F2E8E7;flex:1;}
 .proj-dd-close{background:none;border:none;color:rgba(255,255,255,.6);cursor:pointer;font-size:18px;line-height:1;padding:2px 4px;border-radius:4px;transition:.15s;}
 .proj-dd-close:hover{color:#fff;background:rgba(255,255,255,.1);}
-
 .proj-dd-body{padding:12px 14px;display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;}
-
 .proj-save-row{display:flex;gap:6px;}
-.proj-name-inp{
-  flex:1;padding:7px 10px;border:1.5px solid var(--line);border-radius:var(--r);
-  font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;
-  font-size:12px;color:var(--ink);outline:none;background:var(--paper);
-}
+.proj-name-inp{flex:1;padding:7px 10px;border:1.5px solid var(--line);border-radius:var(--r);font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;font-size:12px;color:var(--ink);outline:none;background:var(--paper);}
 .proj-name-inp:focus{border-color:#1E535C;background:#fff;}
-.proj-save-btn{
-  padding:7px 12px;border-radius:var(--r);border:none;
-  background:#1E535C;color:#fff;
-  font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;
-  font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;transition:.15s;
-}
+.proj-save-btn{padding:7px 12px;border-radius:var(--r);border:none;background:#1E535C;color:#fff;font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;transition:.15s;}
 .proj-save-btn:hover{background:#16404A;}
-
 .proj-section-lbl{font-size:10px;font-weight:600;color:var(--ink3);letter-spacing:.06em;text-transform:uppercase;margin-top:2px;}
-
 .proj-list{display:flex;flex-direction:column;gap:4px;}
-.proj-item{
-  display:flex;align-items:center;gap:8px;
-  padding:8px 10px;border-radius:var(--r);
-  border:1px solid var(--line2);background:var(--paper);
-  transition:.12s;
-}
+.proj-item{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:var(--r);border:1px solid var(--line2);background:var(--paper);transition:.12s;}
 .proj-item:hover{border-color:#C8D8D9;background:#EEF5F5;}
 .proj-item.current{border-color:#1E535C;background:#D8EAEC;}
 .proj-item-info{flex:1;min-width:0;cursor:pointer;}
 .proj-item-name{font-size:12px;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .proj-item-meta{font-size:10px;color:var(--ink3);margin-top:1px;}
-.proj-item-load{
-  padding:4px 8px;border-radius:5px;font-size:10px;font-weight:600;
-  border:1px solid #C8D8D9;background:#fff;color:#1E535C;cursor:pointer;
-  white-space:nowrap;transition:.12s;flex-shrink:0;
-}
+.proj-item-load{padding:4px 8px;border-radius:5px;font-size:10px;font-weight:600;border:1px solid #C8D8D9;background:#fff;color:#1E535C;cursor:pointer;white-space:nowrap;transition:.12s;flex-shrink:0;}
 .proj-item-load:hover{background:#1E535C;color:#fff;border-color:#1E535C;}
-.proj-item-del{
-  background:none;border:none;cursor:pointer;
-  color:var(--ink3);font-size:14px;padding:2px 4px;
-  border-radius:4px;transition:.12s;flex-shrink:0;line-height:1;
-}
+.proj-item-del{background:none;border:none;cursor:pointer;color:var(--ink3);font-size:14px;padding:2px 4px;border-radius:4px;transition:.12s;flex-shrink:0;line-height:1;}
 .proj-item-del:hover{color:#C0391B;background:#FDE8E4;}
-
 .proj-export-row{display:flex;gap:6px;}
-.proj-exp-btn{
-  flex:1;padding:7px 6px;border-radius:var(--r);
-  border:1px solid var(--line);background:var(--paper);
-  font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;
-  font-size:11px;font-weight:500;color:var(--ink2);cursor:pointer;
-  display:inline-flex;align-items:center;justify-content:center;gap:5px;transition:.12s;
-}
+.proj-exp-btn{flex:1;padding:7px 6px;border-radius:var(--r);border:1px solid var(--line);background:var(--paper);font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;font-size:11px;font-weight:500;color:var(--ink2);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:5px;transition:.12s;}
 .proj-exp-btn:hover{background:#D8EAEC;border-color:#C8D8D9;color:#1E535C;}
-
 .proj-empty{font-size:11px;color:var(--ink3);text-align:center;padding:10px 0;}
-
-.proj-autosave-bar{
-  font-size:10px;color:var(--ink3);
-  display:flex;align-items:center;gap:5px;
-  padding:8px 14px;background:var(--paper);
-  border-top:1px solid var(--line2);flex-shrink:0;
-}
-.proj-autosave-indicator{
-  width:7px;height:7px;border-radius:50%;
-  background:var(--line);flex-shrink:0;transition:.4s;
-}
+.proj-autosave-bar{font-size:10px;color:var(--ink3);display:flex;align-items:center;gap:5px;padding:8px 14px;background:var(--paper);border-top:1px solid var(--line2);flex-shrink:0;}
+.proj-autosave-indicator{width:7px;height:7px;border-radius:50%;background:var(--line);flex-shrink:0;transition:.4s;}
 .proj-autosave-indicator.saved{background:#2E9E6B;}
 
-@media(max-width:767px){
-  .proj-dropdown{
-    position:fixed;top:0!important;left:0!important;right:0;bottom:0;
-    width:100%!important;border-radius:0;max-height:100dvh;
-  }
-  .proj-dd-body{max-height:calc(100dvh - 100px);}
-}
+/* ── RESET BUTTON ── */
+.btn-reset-deviz{margin-left:auto;background:none;border:1px solid transparent;border-radius:6px;color:var(--ink3);cursor:pointer;padding:3px 6px;display:inline-flex;align-items:center;gap:4px;font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;font-size:10px;font-weight:500;transition:.15s;}
+.btn-reset-deviz:hover{color:#C0391B;border-color:rgba(192,57,27,.25);background:rgba(192,57,27,.05);}
+.btn-reset-deviz:disabled{opacity:.25;cursor:not-allowed;}
+.btn-reset-deviz:disabled:hover{color:var(--ink3);border-color:transparent;background:none;}
 
 /* ── CONFIRM MODAL ── */
-.pg-confirm-overlay{
-  position:fixed;inset:0;z-index:11000;
-  background:rgba(15,30,31,.55);
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;
-  opacity:0;transition:opacity .18s;pointer-events:none;
-}
+.pg-confirm-overlay{position:fixed;inset:0;z-index:11000;background:rgba(15,30,31,.55);display:flex;align-items:center;justify-content:center;font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;opacity:0;transition:opacity .18s;pointer-events:none;}
 .pg-confirm-overlay.show{opacity:1;pointer-events:all;}
-.pg-confirm-card{
-  background:#fff;border-radius:14px;
-  padding:28px 28px 22px;width:320px;max-width:90vw;
-  box-shadow:0 10px 40px rgba(0,0,0,.22);
-  display:flex;flex-direction:column;align-items:center;gap:14px;
-  transform:scale(.95) translateY(6px);transition:transform .18s;
-}
+.pg-confirm-card{background:#fff;border-radius:14px;padding:28px 28px 22px;width:320px;max-width:90vw;box-shadow:0 10px 40px rgba(0,0,0,.22);display:flex;flex-direction:column;align-items:center;gap:14px;transform:scale(.95) translateY(6px);transition:transform .18s;}
 .pg-confirm-overlay.show .pg-confirm-card{transform:scale(1) translateY(0);}
 .pg-confirm-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .pg-confirm-icon.warn{background:#FEF3DC;}
@@ -497,34 +416,20 @@ mark{background:rgba(212,160,23,.28);border-radius:2px;padding:0 1px;}
 .pg-confirm-title{font-size:13px;font-weight:600;color:#0F1E1F;text-align:center;}
 .pg-confirm-msg{font-size:12px;color:#2A4245;text-align:center;line-height:1.5;}
 .pg-confirm-btns{display:flex;gap:8px;width:100%;margin-top:2px;}
-.pg-confirm-cancel{
-  flex:1;padding:9px;border:1.5px solid #C8D8D9;border-radius:8px;
-  background:#F2F6F6;color:#2A4245;
-  font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;
-  font-size:12px;font-weight:500;cursor:pointer;transition:.15s;
-}
+.pg-confirm-cancel{flex:1;padding:9px;border:1.5px solid #C8D8D9;border-radius:8px;background:#F2F6F6;color:#2A4245;font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;font-size:12px;font-weight:500;cursor:pointer;transition:.15s;}
 .pg-confirm-cancel:hover{background:#E4EEEE;border-color:#B0C8CA;}
-.pg-confirm-ok{
-  flex:2;padding:9px;border:none;border-radius:8px;
-  background:#1E535C;color:#fff;
-  font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;
-  font-size:12px;font-weight:600;cursor:pointer;transition:.15s;
-}
+.pg-confirm-ok{flex:2;padding:9px;border:none;border-radius:8px;background:#1E535C;color:#fff;font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:.15s;}
 .pg-confirm-ok:hover{background:#16404A;}
 .pg-confirm-ok.danger{background:#C0391B;}
-.pg-confirm-ok.danger:hover{background:#A0301500;}
+.pg-confirm-ok.danger:hover{background:#9B2D16;}
 
-.btn-reset-deviz{
-  margin-left:auto;
-  background:none;border:1px solid transparent;border-radius:6px;
-  color:var(--ink3);cursor:pointer;padding:3px 6px;
-  display:inline-flex;align-items:center;gap:4px;
-  font-family:'Century Gothic','AppleGothic',Futura,Trebuchet MS,Arial,sans-serif;
-  font-size:10px;font-weight:500;transition:.15s;
+@media(max-width:430px){.pg-card{width:92vw;padding:32px 20px;}}
+@media(max-width:767px){
+  .btn-proj .btn-proj-text{display:none;}
+  .btn-proj{padding:7px 10px;}
+  .proj-dropdown{position:fixed;top:0!important;left:0!important;right:0;bottom:0;width:100%!important;border-radius:0;max-height:100dvh;}
+  .proj-dd-body{max-height:calc(100dvh - 100px);}
 }
-.btn-reset-deviz:hover{color:#C0391B;border-color:rgba(192,57,27,.25);background:rgba(192,57,27,.05);}
-.btn-reset-deviz:disabled{opacity:.25;cursor:not-allowed;}
-.btn-reset-deviz:disabled:hover{color:var(--ink3);border-color:transparent;background:none;}
 </style>
 </head>
 <body>
@@ -680,7 +585,7 @@ mark{background:rgba(212,160,23,.28);border-radius:2px;padding:0 1px;}
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F2E8E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="12" y2="17"/></svg>
     <span class="drawer-hdr-title">Deviz curent</span>
     <span class="drawer-hdr-cnt" id="drawerCnt">0 pozitii</span>
-    <button id="resetDevizBtnDrawer" onclick="resetDeviz()" disabled title="Reseteaza devizul" style="background:none;border:none;color:rgba(255,255,255,.5);cursor:pointer;padding:4px 6px;border-radius:6px;display:inline-flex;align-items:center;transition:.15s;" onmouseover="this.style.color='#E88080'" onmouseout="this.style.color='rgba(255,255,255,.5)'">
+    <button id="resetDevizBtnDrawer" onclick="resetDeviz()" disabled title="Reseteaza devizul" style="background:none;border:none;color:rgba(255,255,255,.5);cursor:pointer;padding:4px 6px;border-radius:6px;display:inline-flex;align-items:center;transition:.15s;">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,6 5,6 21,6"/><path d="M19,6l-1,14a2,2,0,0,1-2,2H8a2,2,0,0,1-2-2L5,6"/><path d="M10,11v6"/><path d="M14,11v6"/></svg>
     </button>
     <button class="drawer-close" onclick="closeCart()">&#x2715;</button>
@@ -955,31 +860,10 @@ function stQty(cod,val){
 }
 
 // ── DEVIZ PANEL ───────────────────────────────────────────────
-function resetDeviz(){
-  if(!deviz.length) return;
-  pgConfirm({title:'Resetezi devizul?', msg:'Toate articolele adaugate vor fi sterse.', okLabel:'Reseteaza', okDanger:true, iconDanger:true}, ok=>{
-    if(!ok) return;
-    deviz=[];
-    currentProjId=null;
-    // Sterge autosave complet si blocheaza rescrierea lui pentru 1s
-    localStorage.removeItem('pg_autosave');
-    clearTimeout(autosaveTimer);
-    autosaveDirty=false;
-    document.getElementById('projBtn').classList.remove('dirty');
-    // Salveaza explicit starea goala ca sa nu se restaureze la redeschidere
-    localStorage.setItem('pg_autosave', JSON.stringify({deviz:[], meta:{P:'',B:'',A:'',I:'',D:''}}));
-    renderDeviz();
-    renderDrawerDeviz();
-    renderList();
-    toast('Deviz resetat');
-  });
-}
-
 function renderDeviz(){
   const el=document.getElementById("dlist");
   document.getElementById("cnt").textContent=deviz.length+" pozitii";
   document.getElementById("expBtn").disabled=deviz.length===0;
-  document.getElementById("expBtnArh").disabled=deviz.length===0;
   document.getElementById("expBtnArh").disabled=deviz.length===0;
   const rb=document.getElementById("resetDevizBtn");
   const rbd=document.getElementById("resetDevizBtnDrawer");
@@ -1474,15 +1358,6 @@ function updateDrawerTotals(){
   document.getElementById('drawerTCu').textContent=fmtEur(total*1.21);
 }
 
-// Update FAB badge whenever deviz changes
-const _origRenderDeviz=renderDeviz;
-window.renderDeviz=function(){
-  _origRenderDeviz();
-  const n=deviz.length;
-  const badge=document.getElementById('cartBadge');
-  if(badge){ badge.textContent=n; badge.style.display=n>0?'flex':'none'; }
-};
-
 // Swipe-to-close drawer
 (function(){
   let sx=0;
@@ -1494,280 +1369,224 @@ window.renderDeviz=function(){
   },{passive:true});
 })();
 
-// ── PROJECT MANAGER ──────────────────────────────────────────
-const PROJ_KEY = 'pg_projects';
-const AUTOSAVE_KEY = 'pg_autosave';
-let currentProjId = null;
-let autosaveDirty = false;
-let autosaveTimer = null;
-
-function getProjState(){
-  return {
-    deviz: deviz,
-    meta: {
-      P: document.getElementById('mP').value,
-      B: document.getElementById('mB').value,
-      A: document.getElementById('mA').value,
-      I: document.getElementById('mI').value,
-      D: document.getElementById('mD').value,
-    }
-  };
-}
-
-function applyProjState(state){
-  deviz = state.deviz || [];
-  const m = state.meta || {};
-  ['P','B','A','I','D'].forEach(k=>{
-    const el = document.getElementById('m'+k);
-    const del = document.getElementById('dm'+k);
-    if(el && m[k]!==undefined) el.value = m[k];
-    if(del && m[k]!==undefined) del.value = m[k];
-  });
-  renderDeviz();
-  renderList();
-}
-
-// ── AUTO-SAVE ────────────────────────────────────────────────
-function scheduleAutosave(){
-  autosaveDirty = true;
-  document.getElementById('projBtn').classList.add('dirty');
-  clearTimeout(autosaveTimer);
-  autosaveTimer = setTimeout(doAutosave, 800);
-}
-
-function doAutosave(){
-  try {
-    const state = getProjState();
-    localStorage.setItem(AUTOSAVE_KEY, JSON.stringify(state));
-    autosaveDirty = false;
-    document.getElementById('projBtn').classList.remove('dirty');
-    const ind = document.getElementById('autosaveIndicator');
-    const lbl = document.getElementById('autosaveLabel');
-    if(ind){ ind.classList.add('saved'); }
-    if(lbl){ lbl.textContent = 'Salvat automat · ' + new Date().toLocaleTimeString('ro-RO',{hour:'2-digit',minute:'2-digit'}); }
-    setTimeout(()=>{ if(ind) ind.classList.remove('saved'); }, 2000);
-  } catch(e){ console.warn('autosave error', e); }
-}
-
-function restoreAutosave(){
-  try {
-    const raw = localStorage.getItem(AUTOSAVE_KEY);
-    if(!raw) return;
-    const state = JSON.parse(raw);
-    if(state && (state.deviz?.length || state.meta?.P)){
-      applyProjState(state);
-    }
-  } catch(e){ console.warn('restore autosave error', e); }
-}
-
-// ── SAVED PROJECTS ───────────────────────────────────────────
-function loadProjects(){
-  try { return JSON.parse(localStorage.getItem(PROJ_KEY)||'[]'); }
-  catch(e){ return []; }
-}
-function saveProjects(list){
-  localStorage.setItem(PROJ_KEY, JSON.stringify(list));
-}
-
-function saveCurrentProject(){
-  const nameInp = document.getElementById('projNameInp');
-  let name = nameInp.value.trim();
-  if(!name){
-    // Incearca sa ia din campul Proiect
-    name = document.getElementById('mP').value.trim();
-  }
-  if(!name){ toast('⚠ Introduceti un nume pentru proiect'); return; }
-
-  const projects = loadProjects();
-  const existing = projects.findIndex(p => p.name === name);
-  const proj = {
-    id: existing>=0 ? projects[existing].id : Date.now().toString(),
-    name,
-    savedAt: Date.now(),
-    positions: deviz.length,
-    state: getProjState()
-  };
-  if(existing >= 0){ projects[existing] = proj; }
-  else { projects.unshift(proj); }
-  saveProjects(projects);
-  currentProjId = proj.id;
-  nameInp.value = '';
-  renderProjList();
-  toast('✓ Proiect salvat: ' + name);
-  doAutosave();
-}
-
-function loadProject(id){
-  const projects = loadProjects();
-  const proj = projects.find(p => p.id === id);
-  if(!proj) return;
-  if(deviz.length > 0){
-
 // ── CUSTOM CONFIRM ───────────────────────────────────────────
-function pgConfirm({title, msg, okLabel='Confirmă', okDanger=false, iconDanger=false}, cb){
-  const ov = document.getElementById('pgConfirmOverlay');
-  const icon = document.getElementById('pgConfirmIcon');
-  const t = document.getElementById('pgConfirmTitle');
-  const m = document.getElementById('pgConfirmMsg');
-  const ok = document.getElementById('pgConfirmOk');
-  const cancel = document.getElementById('pgConfirmCancel');
-
-  icon.className = 'pg-confirm-icon ' + (iconDanger ? 'danger' : 'warn');
-  icon.innerHTML = iconDanger
-    ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C0391B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,6 5,6 21,6"/><path d="M19,6l-1,14a2,2,0,0,1-2,2H8a2,2,0,0,1-2-2L5,6"/><path d="M10,11v6"/><path d="M14,11v6"/></svg>'
-    : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>';
-
-  t.textContent = title || '';
-  m.textContent = msg || '';
-  ok.textContent = okLabel;
-  ok.className = 'pg-confirm-ok' + (okDanger ? ' danger' : '');
-
+function pgConfirm({title, msg, okLabel='Confirma', okDanger=false, iconDanger=false}, cb){
+  const ov=document.getElementById('pgConfirmOverlay');
+  const icon=document.getElementById('pgConfirmIcon');
+  const t=document.getElementById('pgConfirmTitle');
+  const m=document.getElementById('pgConfirmMsg');
+  const ok=document.getElementById('pgConfirmOk');
+  const cancel=document.getElementById('pgConfirmCancel');
+  icon.className='pg-confirm-icon '+(iconDanger?'danger':'warn');
+  icon.innerHTML=iconDanger
+    ?'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C0391B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,6 5,6 21,6"/><path d="M19,6l-1,14a2,2,0,0,1-2,2H8a2,2,0,0,1-2-2L5,6"/><path d="M10,11v6"/><path d="M14,11v6"/></svg>'
+    :'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>';
+  t.textContent=title||'';
+  m.textContent=msg||'';
+  ok.textContent=okLabel;
+  ok.className='pg-confirm-ok'+(okDanger?' danger':'');
   ov.classList.add('show');
-
-  function cleanup(result){
-    ov.classList.remove('show');
-    ok.removeEventListener('click', onOk);
-    cancel.removeEventListener('click', onCancel);
-    ov.removeEventListener('click', onOverlay);
-    cb(result);
-  }
+  function cleanup(result){ ov.classList.remove('show'); ok.removeEventListener('click',onOk); cancel.removeEventListener('click',onCancel); ov.removeEventListener('click',onOverlay); cb(result); }
   function onOk(){ cleanup(true); }
   function onCancel(){ cleanup(false); }
   function onOverlay(e){ if(e.target===ov) cleanup(false); }
-
-  ok.addEventListener('click', onOk);
-  cancel.addEventListener('click', onCancel);
-  ov.addEventListener('click', onOverlay);
+  ok.addEventListener('click',onOk);
+  cancel.addEventListener('click',onCancel);
+  ov.addEventListener('click',onOverlay);
 }
 
-  }
-}
-
-function deleteProject(id){
-  const projects = loadProjects();
-  const proj = projects.find(p=>p.id===id);
-  if(!proj) return;
-  pgConfirm({title:'Stergi proiectul?', msg:'"'+proj.name+'" va fi sters definitiv.', okLabel:'Sterge', okDanger:true, iconDanger:true}, ok=>{
+// ── RESET DEVIZ ───────────────────────────────────────────────
+function resetDeviz(){
+  if(!deviz.length) return;
+  pgConfirm({title:'Resetezi devizul?', msg:'Toate articolele adaugate vor fi sterse.', okLabel:'Reseteaza', okDanger:true, iconDanger:true}, function(ok){
     if(!ok) return;
-    const updated = projects.filter(p => p.id !== id);
-    saveProjects(updated);
-    if(currentProjId === id) currentProjId = null;
-    renderProjList();
-    toast('Proiect sters: ' + proj.name);
+    deviz=[];
+    currentProjId=null;
+    ['P','B','A','I'].forEach(function(k){
+      ['m'+k,'dm'+k].forEach(function(id){ var el=document.getElementById(id); if(el) el.value=''; });
+    });
+    var today=new Date().toISOString().split('T')[0];
+    ['mD','dmD'].forEach(function(id){ var el=document.getElementById(id); if(el) el.value=today; });
+    var emptyHTML='<div class="dempty"><div style="opacity:.2;color:var(--ink3);"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg></div><span style="font-size:12px;color:var(--ink3);">Apasa + pentru a adauga lucrari</span></div>';
+    var dl=document.getElementById('dlist'); if(dl) dl.innerHTML=emptyHTML;
+    var dld=document.getElementById('dlistDrawer'); if(dld) dld.innerHTML=emptyHTML;
+    document.getElementById('cnt').textContent='0 pozitii';
+    var dcnt=document.getElementById('drawerCnt'); if(dcnt) dcnt.textContent='0 pozitii';
+    ['expBtn','expBtnArh','resetDevizBtn'].forEach(function(id){ var el=document.getElementById(id); if(el) el.disabled=true; });
+    var rbd=document.getElementById('resetDevizBtnDrawer'); if(rbd) rbd.disabled=true;
+    ['catTots','drawerCatTots'].forEach(function(id){ var el=document.getElementById(id); if(el) el.innerHTML=''; });
+    [['tFara','€ 0,00'],['tTVA','€ 0,00'],['tCu','€ 0,00'],['drawerTFara','€ 0,00'],['drawerTTVA','€ 0,00'],['drawerTCu','€ 0,00']].forEach(function(p){ var el=document.getElementById(p[0]); if(el) el.textContent=p[1]; });
+    renderList();
+    var pb=document.getElementById('projBtn'); if(pb) pb.classList.remove('dirty');
+    localStorage.setItem('pg_autosave', JSON.stringify({deviz:[], meta:{P:'',B:'',A:'',I:'',D:today}}));
+    toast('Deviz resetat');
   });
 }
 
+// ── PROJECT MANAGER ──────────────────────────────────────────
+const PROJ_KEY='pg_projects';
+const AUTOSAVE_KEY='pg_autosave';
+let currentProjId=null;
+let autosaveDirty=false;
+let autosaveTimer=null;
+let skipAutosave=false;
+
+function getProjState(){
+  return {deviz:deviz, meta:{P:document.getElementById('mP').value, B:document.getElementById('mB').value, A:document.getElementById('mA').value, I:document.getElementById('mI').value, D:document.getElementById('mD').value}};
+}
+function applyProjState(state){
+  deviz=state.deviz||[];
+  var m=state.meta||{};
+  ['P','B','A','I','D'].forEach(function(k){
+    var el=document.getElementById('m'+k); var del=document.getElementById('dm'+k);
+    if(el&&m[k]!==undefined) el.value=m[k];
+    if(del&&m[k]!==undefined) del.value=m[k];
+  });
+  renderDeviz(); renderList();
+}
+function scheduleAutosave(){
+  if(skipAutosave) return;
+  autosaveDirty=true;
+  var pb=document.getElementById('projBtn'); if(pb) pb.classList.add('dirty');
+  clearTimeout(autosaveTimer);
+  autosaveTimer=setTimeout(doAutosave, 800);
+}
+function doAutosave(){
+  try{
+    var state=getProjState();
+    localStorage.setItem(AUTOSAVE_KEY, JSON.stringify(state));
+    autosaveDirty=false;
+    var pb=document.getElementById('projBtn'); if(pb) pb.classList.remove('dirty');
+    var ind=document.getElementById('autosaveIndicator'); var lbl=document.getElementById('autosaveLabel');
+    if(ind) ind.classList.add('saved');
+    if(lbl) lbl.textContent='Salvat automat · '+new Date().toLocaleTimeString('ro-RO',{hour:'2-digit',minute:'2-digit'});
+    setTimeout(function(){ if(ind) ind.classList.remove('saved'); }, 2000);
+  }catch(e){ console.warn('autosave error',e); }
+}
+function restoreAutosave(){
+  try{
+    var raw=localStorage.getItem(AUTOSAVE_KEY); if(!raw) return;
+    var state=JSON.parse(raw);
+    if(state&&(state.deviz&&state.deviz.length>0)) applyProjState(state);
+  }catch(e){ console.warn('restore error',e); }
+}
+function loadProjects(){ try{ return JSON.parse(localStorage.getItem(PROJ_KEY)||'[]'); }catch(e){ return []; } }
+function saveProjects(list){ localStorage.setItem(PROJ_KEY, JSON.stringify(list)); }
+function saveCurrentProject(){
+  var nameInp=document.getElementById('projNameInp');
+  var name=nameInp.value.trim()||document.getElementById('mP').value.trim();
+  if(!name){ toast('⚠ Introduceti un nume pentru proiect'); return; }
+  var projects=loadProjects();
+  var existing=projects.findIndex(function(p){ return p.name===name; });
+  var proj={id:existing>=0?projects[existing].id:Date.now().toString(), name:name, savedAt:Date.now(), positions:deviz.length, state:getProjState()};
+  if(existing>=0) projects[existing]=proj; else projects.unshift(proj);
+  saveProjects(projects); currentProjId=proj.id; nameInp.value='';
+  renderProjList(); toast('✓ Proiect salvat: '+name); doAutosave();
+}
+function loadProject(id){
+  var projects=loadProjects(); var proj=projects.find(function(p){ return p.id===id; }); if(!proj) return;
+  if(deviz.length>0){
+    pgConfirm({title:'Incarci proiectul?', msg:'Proiectul "'+proj.name+'" va inlocui devizul curent.', okLabel:'Incarca'}, function(ok){
+      if(!ok) return;
+      currentProjId=proj.id; applyProjState(proj.state);
+      document.getElementById('projNameInp').value=proj.name;
+      toast('✓ Proiect incarcat: '+proj.name); renderProjList(); closeProjDropdown();
+    });
+  } else {
+    currentProjId=proj.id; applyProjState(proj.state);
+    document.getElementById('projNameInp').value=proj.name;
+    toast('✓ Proiect incarcat: '+proj.name); renderProjList(); closeProjDropdown();
+  }
+}
+function deleteProject(id){
+  var projects=loadProjects(); var proj=projects.find(function(p){ return p.id===id; }); if(!proj) return;
+  pgConfirm({title:'Stergi proiectul?', msg:'"'+proj.name+'" va fi sters definitiv.', okLabel:'Sterge', okDanger:true, iconDanger:true}, function(ok){
+    if(!ok) return;
+    var updated=projects.filter(function(p){ return p.id!==id; });
+    saveProjects(updated); if(currentProjId===id) currentProjId=null;
+    renderProjList(); toast('Proiect sters: '+proj.name);
+  });
+}
 function renderProjList(){
-  const el = document.getElementById('projList');
-  const projects = loadProjects();
-  if(!projects.length){
-    el.innerHTML = '<div class="proj-empty">Niciun proiect salvat inca.<br>Adauga articole si salveaza mai sus.</div>';
-    return;
-  }
-  el.innerHTML = projects.map(p => {
-    const isCurrent = p.id === currentProjId;
-    const dt = new Date(p.savedAt).toLocaleDateString('ro-RO',{day:'2-digit',month:'2-digit',year:'2-digit',hour:'2-digit',minute:'2-digit'});
-    return `<div class="proj-item${isCurrent?' current':''}">
-      <div class="proj-item-info" onclick="loadProject('${p.id}')">
-        <div class="proj-item-name">${p.name}</div>
-        <div class="proj-item-meta">${p.positions} pozitii · ${dt}</div>
-      </div>
-      <button class="proj-item-load" onclick="loadProject('${p.id}')">Incarca</button>
-      <button class="proj-item-del" onclick="event.stopPropagation();deleteProject('${p.id}')" title="Sterge">✕</button>
-    </div>`;
-  }).join('');
+  var el=document.getElementById('projList'); var projects=loadProjects();
+  if(!projects.length){ el.innerHTML='<div class="proj-empty">Niciun proiect salvat inca.<br>Adauga articole si salveaza mai sus.</div>'; return; }
+  var html='';
+  projects.forEach(function(p){
+    var isCurrent=p.id===currentProjId;
+    var dt=new Date(p.savedAt).toLocaleDateString('ro-RO',{day:'2-digit',month:'2-digit',year:'2-digit',hour:'2-digit',minute:'2-digit'});
+    html+='<div class="proj-item'+(isCurrent?' current':'')+'" data-pid="'+p.id+'">';
+    html+='<div class="proj-item-info"><div class="proj-item-name">'+p.name+'</div>';
+    html+='<div class="proj-item-meta">'+p.positions+' pozitii · '+dt+'</div></div>';
+    html+='<button class="proj-item-load">Incarca</button>';
+    html+='<button class="proj-item-del" title="Sterge">✕</button>';
+    html+='</div>';
+  });
+  el.innerHTML=html;
+  el.querySelectorAll('.proj-item').forEach(function(item){
+    var pid=item.dataset.pid;
+    item.querySelector('.proj-item-info').addEventListener('click',function(){ loadProject(pid); });
+    item.querySelector('.proj-item-load').addEventListener('click',function(){ loadProject(pid); });
+    item.querySelector('.proj-item-del').addEventListener('click',function(e){ e.stopPropagation(); deleteProject(pid); });
+  });
 }
-
-// ── DROPDOWN TOGGLE ──────────────────────────────────────────
 function toggleProjDropdown(e){
-  e && e.stopPropagation();
-  const dd = document.getElementById('projDropdown');
+  e&&e.stopPropagation();
+  var dd=document.getElementById('projDropdown');
   if(dd.classList.contains('open')){ closeProjDropdown(); return; }
-  // Position dropdown under button (desktop)
-  const btn = document.getElementById('projBtn');
-  const rect = btn.getBoundingClientRect();
-  dd.style.top = (rect.bottom + 6) + 'px';
-  dd.style.left = Math.max(8, rect.right - 320) + 'px';
-  dd.classList.add('open');
-  renderProjList();
-  setTimeout(()=>{ document.getElementById('projNameInp').focus(); }, 100);
+  var btn=document.getElementById('projBtn'); var rect=btn.getBoundingClientRect();
+  dd.style.top=(rect.bottom+6)+'px'; dd.style.left=Math.max(8,rect.right-320)+'px';
+  dd.classList.add('open'); renderProjList();
+  setTimeout(function(){ var ni=document.getElementById('projNameInp'); if(ni) ni.focus(); }, 100);
 }
-
-function closeProjDropdown(){
-  document.getElementById('projDropdown').classList.remove('open');
-}
-
-// Close on outside click
-document.addEventListener('click', e=>{
-  const dd = document.getElementById('projDropdown');
-  const btn = document.getElementById('projBtn');
-  if(dd.classList.contains('open') && !dd.contains(e.target) && !btn.contains(e.target)){
-    closeProjDropdown();
-  }
+function closeProjDropdown(){ document.getElementById('projDropdown').classList.remove('open'); }
+document.addEventListener('click', function(e){
+  var dd=document.getElementById('projDropdown'); var btn=document.getElementById('projBtn');
+  if(dd&&dd.classList.contains('open')&&!dd.contains(e.target)&&btn&&!btn.contains(e.target)) closeProjDropdown();
 });
-
-// ── EXPORT / IMPORT JSON ─────────────────────────────────────
 function exportProjJSON(){
   if(!deviz.length){ toast('⚠ Devizul este gol'); return; }
-  const state = getProjState();
-  const name = state.meta.P || 'Deviz_PROGRAPHIC';
-  const blob = new Blob([JSON.stringify({version:1, name, exportedAt: Date.now(), state}, null, 2)], {type:'application/json'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = name.replace(/\s+/g,'_') + '_' + new Date().toISOString().split('T')[0] + '.json';
-  a.click();
-  URL.revokeObjectURL(a.href);
-  toast('✓ Proiect exportat ca JSON');
+  var state=getProjState(); var name=state.meta.P||'Deviz_PROGRAPHIC';
+  var blob=new Blob([JSON.stringify({version:1,name:name,exportedAt:Date.now(),state:state},null,2)],{type:'application/json'});
+  var a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download=name.replace(/\s+/g,'_')+'_'+new Date().toISOString().split('T')[0]+'.json';
+  a.click(); URL.revokeObjectURL(a.href); toast('✓ Proiect exportat ca JSON');
 }
-
 function importProjJSON(inp){
-  const f = inp.files[0]; if(!f) return;
-  const rd = new FileReader();
-  rd.onload = e => {
-    try {
-      const data = JSON.parse(e.target.result);
-      if(!data.state || !Array.isArray(data.state.deviz)) throw new Error('Format invalid');
+  var f=inp.files[0]; if(!f) return;
+  var rd=new FileReader();
+  rd.onload=function(e){
+    try{
+      var data=JSON.parse(e.target.result);
+      if(!data.state||!Array.isArray(data.state.deviz)) throw new Error('Format invalid');
       function doImport(){
         applyProjState(data.state);
-        // Salveaza automat in lista de proiecte
-        const name = data.name || 'Proiect importat';
-        const projects = loadProjects();
-        const existing = projects.findIndex(p => p.name === name);
-        const proj = {
-          id: existing>=0 ? projects[existing].id : Date.now().toString(),
-          name,
-          savedAt: Date.now(),
-          positions: (data.state.deviz||[]).length,
-          state: data.state
-        };
-        if(existing >= 0){ projects[existing] = proj; } else { projects.unshift(proj); }
-        saveProjects(projects);
-        currentProjId = proj.id;
-        if(data.name) document.getElementById('projNameInp').value = data.name;
-        renderProjList();
-        toast('✓ Proiect importat si salvat: ' + name);
-        closeProjDropdown();
+        var name=data.name||'Proiect importat';
+        var projects=loadProjects();
+        var existing=projects.findIndex(function(p){ return p.name===name; });
+        var proj={id:existing>=0?projects[existing].id:Date.now().toString(), name:name, savedAt:Date.now(), positions:(data.state.deviz||[]).length, state:data.state};
+        if(existing>=0) projects[existing]=proj; else projects.unshift(proj);
+        saveProjects(projects); currentProjId=proj.id;
+        document.getElementById('projNameInp').value=name;
+        renderProjList(); toast('✓ Proiect importat si salvat: '+name); closeProjDropdown();
       }
-      if(deviz.length > 0){
-        pgConfirm({title:'Importi proiectul?', msg:'"'+(data.name||'?')+'" va inlocui devizul curent.', okLabel:'Importa'}, ok=>{ if(ok) doImport(); });
-      } else {
-        doImport();
-      }
-    } catch(err){ toast('⚠ Eroare la import: ' + err.message); }
+      if(deviz.length>0){
+        pgConfirm({title:'Importi proiectul?', msg:'"'+(data.name||'?')+'" va inlocui devizul curent.', okLabel:'Importa'}, function(ok){ if(ok) doImport(); });
+      } else { doImport(); }
+    }catch(err){ toast('⚠ Eroare la import: '+err.message); }
   };
-  rd.readAsText(f);
-  inp.value='';
+  rd.readAsText(f); inp.value='';
 }
 
-// ── HOOK INTO EXISTING renderDeviz ───────────────────────────
-const _origRenderDeviz2 = window.renderDeviz;
-window.renderDeviz = function(){
-  _origRenderDeviz2();
+// ── HOOKS ─────────────────────────────────────────────────────
+const _origRenderDevizFAB=renderDeviz;
+window.renderDeviz=function(){
+  _origRenderDevizFAB();
+  var n=deviz.length; var badge=document.getElementById('cartBadge');
+  if(badge){ badge.textContent=n; badge.style.display=n>0?'flex':'none'; }
   scheduleAutosave();
 };
 
-// ── RESTORE ON LOAD ──────────────────────────────────────────
-window.addEventListener('load', ()=>{
+window.addEventListener('load', function(){
   setTimeout(restoreAutosave, 500);
 });
 
@@ -1794,15 +1613,15 @@ window.addEventListener('load', ()=>{
 
 <!-- ── CONFIRM MODAL ── -->
 <div class="pg-confirm-overlay" id="pgConfirmOverlay">
-  <div class="pg-confirm-card" id="pgConfirmCard">
-    <div class="pg-confirm-icon" id="pgConfirmIcon">
+  <div class="pg-confirm-card">
+    <div class="pg-confirm-icon warn" id="pgConfirmIcon">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
     </div>
     <div class="pg-confirm-title" id="pgConfirmTitle"></div>
     <div class="pg-confirm-msg" id="pgConfirmMsg"></div>
     <div class="pg-confirm-btns">
-      <button class="pg-confirm-cancel" id="pgConfirmCancel">Anulează</button>
-      <button class="pg-confirm-ok" id="pgConfirmOk">Confirmă</button>
+      <button class="pg-confirm-cancel" id="pgConfirmCancel">Anuleaza</button>
+      <button class="pg-confirm-ok" id="pgConfirmOk">Confirma</button>
     </div>
   </div>
 </div>
